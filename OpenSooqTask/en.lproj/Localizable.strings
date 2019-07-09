@@ -1,0 +1,27 @@
+/* 
+  Localized.strings
+  OpenSooqTask
+
+  Created by Qais Alnammari on 7/8/19.
+  Copyright © 2019 Qais Alnammari. All rights reserved.
+*/
+
+"map" = "Map";
+"list" = "List";
+"distance" = "Distance";
+"name" = "Name";
+"type" = "Type";
+
+"locationUnknown" = "Location Unknown";
+"pleaseTryAgainLater" = "Please try again later!";
+"locationAccessDenied" = "Location access denied";
+"requiredAccessMsg" = "This application requires access to your location in order to provide service!";
+"openSettings" = "Open Settings";
+"cancel" = "Cancel";
+"connectionError" = "Connection Error";
+"connectionErrorMsg" = "Can't access your current location! Please check your network connection or that you are not in airplane mode!";
+"metersAway" = "Meters away";
+"restaurantName" = "Restaurant Name";
+"unknown" = "Unknown";
+"nearByRestaurants" = "Near By Restaurants";
+

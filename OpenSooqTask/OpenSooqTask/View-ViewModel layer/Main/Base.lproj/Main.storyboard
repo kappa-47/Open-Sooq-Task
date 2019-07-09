@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MXr-Sa-V22">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurants ListVC-->
+        <scene sceneID="TOu-5c-qfy">
+            <objects>
+                <viewController storyboardIdentifier="RestaurantsListVC" id="Fys-yn-wwu" customClass="RestaurantsListVC" customModule="OpenSooqTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJW-fY-K7v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X5l-BV-EIw">
+                                <rect key="frame" x="0.0" y="74" width="375" height="738"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Near By Restaurants" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S48-HJ-BUC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7qg-9m-KWI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nointernet" translatesAutoresizingMaskIntoConstraints="NO" id="qIm-Yj-hNC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qIm-Yj-hNC" firstAttribute="leading" secondItem="f2g-Ju-9Fq" secondAttribute="leading" id="8bU-NC-RL7"/>
+                            <constraint firstItem="f2g-Ju-9Fq" firstAttribute="trailing" secondItem="X5l-BV-EIw" secondAttribute="trailing" id="Aoa-Ck-S8J"/>
+                            <constraint firstItem="S48-HJ-BUC" firstAttribute="top" secondItem="f2g-Ju-9Fq" secondAttribute="top" id="Pg6-ph-8UA"/>
+                            <constraint firstItem="qIm-Yj-hNC" firstAttribute="top" secondItem="cJW-fY-K7v" secondAttribute="top" id="Q7p-SV-IPW"/>
+                            <constraint firstAttribute="bottom" secondItem="X5l-BV-EIw" secondAttribute="bottom" id="RIE-dq-y2P"/>
+                            <constraint firstItem="qIm-Yj-hNC" firstAttribute="trailing" secondItem="f2g-Ju-9Fq" secondAttribute="trailing" id="Ueu-OD-gmw"/>
+                            <constraint firstItem="f2g-Ju-9Fq" firstAttribute="trailing" secondItem="S48-HJ-BUC" secondAttribute="trailing" id="Yrw-Pd-Ws5"/>
+                            <constraint firstItem="X5l-BV-EIw" firstAttribute="top" secondItem="S48-HJ-BUC" secondAttribute="bottom" id="jdM-Kp-8Ky"/>
+                            <constraint firstAttribute="bottom" secondItem="qIm-Yj-hNC" secondAttribute="bottom" id="qhI-QI-sZE"/>
+                            <constraint firstItem="S48-HJ-BUC" firstAttribute="leading" secondItem="f2g-Ju-9Fq" secondAttribute="leading" id="tBL-F9-dyM"/>
+                            <constraint firstItem="X5l-BV-EIw" firstAttribute="leading" secondItem="f2g-Ju-9Fq" secondAttribute="leading" id="wRe-au-3wm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="f2g-Ju-9Fq"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="icons8-list-52" id="BRW-rn-eRv"/>
+                    <connections>
+                        <outlet property="restaurantTableView" destination="X5l-BV-EIw" id="vk2-pf-s1t"/>
+                        <outlet property="titleLbl" destination="S48-HJ-BUC" id="xb2-NT-88f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kkb-4B-wpU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-940" y="116.00985221674877"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="kD2-eb-bF2">
+            <objects>
+                <tabBarController id="MXr-Sa-V22" customClass="MainTabBarController" customModule="OpenSooqTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hwN-jK-h1P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Pkj-MF-IFX"/>
+                        <segue destination="Fys-yn-wwu" kind="relationship" relationship="viewControllers" id="4PO-Fd-8B8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNo-67-sbP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1375" y="-628"/>
+        </scene>
+        <!--MapVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MapVC" id="BYZ-38-t0r" customClass="MapVC" customModule="OpenSooqTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4S-5p-ng1" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l4S-5p-ng1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SaQ-gG-uuZ"/>
+                            <constraint firstAttribute="bottom" secondItem="l4S-5p-ng1" secondAttribute="bottom" id="XyF-od-mwR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l4S-5p-ng1" secondAttribute="trailing" id="hoo-ok-ptN"/>
+                            <constraint firstItem="l4S-5p-ng1" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="v4t-Wj-fo9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="map-localization" id="35t-Fw-egi"/>
+                    <connections>
+                        <outlet property="mapView" destination="l4S-5p-ng1" id="lRs-Q5-vf0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1800" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-list-52" width="26" height="26"/>
+        <image name="map-localization" width="32" height="32"/>
+        <image name="nointernet" width="800" height="600"/>
+    </resources>
+</document>

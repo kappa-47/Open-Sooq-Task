@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		391B8FB722D3E50200BD48C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 391B8FB922D3E50200BD48C8 /* Localizable.strings */; };
+		391B8FC222D519A000BD48C8 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391B8FC122D519A000BD48C8 /* UIView+Ext.swift */; };
+		3974107022D3D13A00AFBF60 /* LocalizationKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974106F22D3D13A00AFBF60 /* LocalizationKeys.swift */; };
+		3974107322D3D1C700AFBF60 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3974107222D3D1C700AFBF60 /* Globals.swift */; };
+		39C4788022D1424100748FF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C4787F22D1424100748FF0 /* AppDelegate.swift */; };
+		39C4788222D1424100748FF0 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C4788122D1424100748FF0 /* MapVC.swift */; };
+		39C4788522D1424100748FF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C4788322D1424100748FF0 /* Main.storyboard */; };
+		39C4788722D1424100748FF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39C4788622D1424100748FF0 /* Assets.xcassets */; };
+		39C4788A22D1424100748FF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39C4788822D1424100748FF0 /* LaunchScreen.storyboard */; };
+		39C4789522D1424100748FF0 /* OpenSooqTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C4789422D1424100748FF0 /* OpenSooqTaskTests.swift */; };
+		39C478AC22D143F000748FF0 /* SKActivityIndicatorGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478A122D143F000748FF0 /* SKActivityIndicatorGenerator.swift */; };
+		39C478AD22D143F000748FF0 /* SKPreloadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478A222D143F000748FF0 /* SKPreloadingView.swift */; };
+		39C478AE22D143F000748FF0 /* SKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478A322D143F000748FF0 /* SKRefreshControl.swift */; };
+		39C478B122D143F000748FF0 /* RemoteContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478A822D143F000748FF0 /* RemoteContext.swift */; };
+		39C478B222D143F000748FF0 /* SKActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478A922D143F000748FF0 /* SKActivityIndicator.swift */; };
+		39C478B322D143F000748FF0 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478AB22D143F000748FF0 /* NibLoadable.swift */; };
+		39C478C122D1442C00748FF0 /* ApiEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478B822D1442C00748FF0 /* ApiEndPoints.swift */; };
+		39C478C222D1442C00748FF0 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478B922D1442C00748FF0 /* RemoteDataSource.swift */; };
+		39C478C322D1442C00748FF0 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478BB22D1442C00748FF0 /* DataSourceProtocol.swift */; };
+		39C478C422D1442C00748FF0 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478BC22D1442C00748FF0 /* DataSource.swift */; };
+		39C478C522D1442C00748FF0 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478BE22D1442C00748FF0 /* LocalDataSource.swift */; };
+		39C478CB22D1448A00748FF0 /* AppLanguageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478CA22D1448A00748FF0 /* AppLanguageManager.swift */; };
+		39C478D022D1DB9300748FF0 /* CustomWindowsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478CF22D1DB9300748FF0 /* CustomWindowsView.swift */; };
+		39C478D422D228A600748FF0 /* CustomWindowsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39C478D322D228A600748FF0 /* CustomWindowsView.xib */; };
+		39C478D622D22A3200748FF0 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478D522D22A3200748FF0 /* PlacesModel.swift */; };
+		39C478D822D22EEB00748FF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478D722D22EEB00748FF0 /* Constants.swift */; };
+		39C478DA22D2315B00748FF0 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39C478D922D2315B00748FF0 /* MainViewModel.swift */; };
+		39CCE3E522D28A47008DC36D /* RestaurantsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCE3E422D28A47008DC36D /* RestaurantsListVC.swift */; };
+		39CCE3E722D28B9E008DC36D /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCE3E622D28B9E008DC36D /* Routing.swift */; };
+		39CCE3EA22D28F16008DC36D /* RestaurantsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCE3E822D28F16008DC36D /* RestaurantsListCell.swift */; };
+		39CCE3EB22D28F16008DC36D /* RestaurantsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39CCE3E922D28F16008DC36D /* RestaurantsListCell.xib */; };
+		39CCE3EE22D2A621008DC36D /* ImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39CCE3ED22D2A621008DC36D /* ImageView+Ext.swift */; };
+		45C077A17A1883C1A53381D1 /* Pods_OpenSooqTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41890AF23DEDDD37229CC93E /* Pods_OpenSooqTaskTests.framework */; };
+		6CA664EA3B20E2E6BA75654E /* Pods_OpenSooqTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54037335384AD6CD3A154A81 /* Pods_OpenSooqTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39C4789122D1424100748FF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39C4787422D1424000748FF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39C4787B22D1424000748FF0;
+			remoteInfo = OpenSooqTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		391B8FB822D3E50200BD48C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		391B8FBA22D3E50500BD48C8 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		391B8FC122D519A000BD48C8 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		3974106F22D3D13A00AFBF60 /* LocalizationKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationKeys.swift; sourceTree = "<group>"; };
+		3974107222D3D1C700AFBF60 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		39C4787C22D1424100748FF0 /* OpenSooqTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenSooqTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C4787F22D1424100748FF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39C4788122D1424100748FF0 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		39C4788422D1424100748FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39C4788622D1424100748FF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		39C4788922D1424100748FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39C4788B22D1424100748FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C4789022D1424100748FF0 /* OpenSooqTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenSooqTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C4789422D1424100748FF0 /* OpenSooqTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSooqTaskTests.swift; sourceTree = "<group>"; };
+		39C4789622D1424100748FF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39C478A122D143F000748FF0 /* SKActivityIndicatorGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKActivityIndicatorGenerator.swift; sourceTree = "<group>"; };
+		39C478A222D143F000748FF0 /* SKPreloadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKPreloadingView.swift; sourceTree = "<group>"; };
+		39C478A322D143F000748FF0 /* SKRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRefreshControl.swift; sourceTree = "<group>"; };
+		39C478A822D143F000748FF0 /* RemoteContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteContext.swift; sourceTree = "<group>"; };
+		39C478A922D143F000748FF0 /* SKActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKActivityIndicator.swift; sourceTree = "<group>"; };
+		39C478AB22D143F000748FF0 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		39C478B822D1442C00748FF0 /* ApiEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndPoints.swift; sourceTree = "<group>"; };
+		39C478B922D1442C00748FF0 /* RemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
+		39C478BB22D1442C00748FF0 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
+		39C478BC22D1442C00748FF0 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		39C478BE22D1442C00748FF0 /* LocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
+		39C478CA22D1448A00748FF0 /* AppLanguageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLanguageManager.swift; sourceTree = "<group>"; };
+		39C478CF22D1DB9300748FF0 /* CustomWindowsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowsView.swift; sourceTree = "<group>"; };
+		39C478D322D228A600748FF0 /* CustomWindowsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomWindowsView.xib; sourceTree = "<group>"; };
+		39C478D522D22A3200748FF0 /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
+		39C478D722D22EEB00748FF0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		39C478D922D2315B00748FF0 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		39CCE3E422D28A47008DC36D /* RestaurantsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListVC.swift; sourceTree = "<group>"; };
+		39CCE3E622D28B9E008DC36D /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		39CCE3E822D28F16008DC36D /* RestaurantsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsListCell.swift; sourceTree = "<group>"; };
+		39CCE3E922D28F16008DC36D /* RestaurantsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantsListCell.xib; sourceTree = "<group>"; };
+		39CCE3ED22D2A621008DC36D /* ImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Ext.swift"; sourceTree = "<group>"; };
+		41890AF23DEDDD37229CC93E /* Pods_OpenSooqTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSooqTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45B36C729F5AF56CF36F4A83 /* Pods-OpenSooqTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSooqTaskTests.release.xcconfig"; path = "Target Support Files/Pods-OpenSooqTaskTests/Pods-OpenSooqTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		54037335384AD6CD3A154A81 /* Pods_OpenSooqTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenSooqTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CD3194EDB5D39888A64352 /* Pods-OpenSooqTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSooqTask.debug.xcconfig"; path = "Target Support Files/Pods-OpenSooqTask/Pods-OpenSooqTask.debug.xcconfig"; sourceTree = "<group>"; };
+		934D25444B81BF773385A77D /* Pods-OpenSooqTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSooqTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenSooqTaskTests/Pods-OpenSooqTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4A8F894C732F82B6B786A20 /* Pods-OpenSooqTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenSooqTask.release.xcconfig"; path = "Target Support Files/Pods-OpenSooqTask/Pods-OpenSooqTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39C4787922D1424000748FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA664EA3B20E2E6BA75654E /* Pods_OpenSooqTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C4788D22D1424100748FF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45C077A17A1883C1A53381D1 /* Pods_OpenSooqTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		391B8FBD22D4FFD900BD48C8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				39C4788122D1424100748FF0 /* MapVC.swift */,
+				39CCE3E422D28A47008DC36D /* RestaurantsListVC.swift */,
+				39C4788322D1424100748FF0 /* Main.storyboard */,
+				39C478D922D2315B00748FF0 /* MainViewModel.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		391B8FC022D5197800BD48C8 /* UIView+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				391B8FC122D519A000BD48C8 /* UIView+Ext.swift */,
+			);
+			path = "UIView+Ext";
+			sourceTree = "<group>";
+		};
+		3974107122D3D1B900AFBF60 /* Globals */ = {
+			isa = PBXGroup;
+			children = (
+				3974107222D3D1C700AFBF60 /* Globals.swift */,
+			);
+			path = Globals;
+			sourceTree = "<group>";
+		};
+		39C4787322D1424000748FF0 = {
+			isa = PBXGroup;
+			children = (
+				391B8FB922D3E50200BD48C8 /* Localizable.strings */,
+				3974106F22D3D13A00AFBF60 /* LocalizationKeys.swift */,
+				39C4787E22D1424100748FF0 /* OpenSooqTask */,
+				39C4789322D1424100748FF0 /* OpenSooqTaskTests */,
+				39C4787D22D1424100748FF0 /* Products */,
+				5EB4412B410280BDE2FFCEE2 /* Pods */,
+				3C7E199C2CA912D83615BE81 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		39C4787D22D1424100748FF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39C4787C22D1424100748FF0 /* OpenSooqTask.app */,
+				39C4789022D1424100748FF0 /* OpenSooqTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39C4787E22D1424100748FF0 /* OpenSooqTask */ = {
+			isa = PBXGroup;
+			children = (
+				39C478A022D143EF00748FF0 /* Helpers */,
+				39C4789F22D143DC00748FF0 /* Constants */,
+				39C478B522D1442C00748FF0 /* Model Layer */,
+				39C478C722D1443900748FF0 /* View-ViewModel layer */,
+				39C478C922D1447D00748FF0 /* Xib's */,
+				39C4788622D1424100748FF0 /* Assets.xcassets */,
+				39C4788822D1424100748FF0 /* LaunchScreen.storyboard */,
+				39C4787F22D1424100748FF0 /* AppDelegate.swift */,
+				39CCE3E622D28B9E008DC36D /* Routing.swift */,
+				39C478CA22D1448A00748FF0 /* AppLanguageManager.swift */,
+				39C4788B22D1424100748FF0 /* Info.plist */,
+			);
+			path = OpenSooqTask;
+			sourceTree = "<group>";
+		};
+		39C4789322D1424100748FF0 /* OpenSooqTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				39C4789422D1424100748FF0 /* OpenSooqTaskTests.swift */,
+				39C4789622D1424100748FF0 /* Info.plist */,
+			);
+			path = OpenSooqTaskTests;
+			sourceTree = "<group>";
+		};
+		39C4789F22D143DC00748FF0 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				39C478D722D22EEB00748FF0 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		39C478A022D143EF00748FF0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3974107122D3D1B900AFBF60 /* Globals */,
+				39C478B422D1440400748FF0 /* Loader */,
+				39C478A422D143F000748FF0 /* Extensions */,
+				39C478AA22D143F000748FF0 /* Protocols */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		39C478A422D143F000748FF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				391B8FC022D5197800BD48C8 /* UIView+Ext */,
+				39CCE3EC22D2A5E6008DC36D /* ImageView+Ext */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39C478AA22D143F000748FF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39C478AB22D143F000748FF0 /* NibLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		39C478B422D1440400748FF0 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				39C478A122D143F000748FF0 /* SKActivityIndicatorGenerator.swift */,
+				39C478A222D143F000748FF0 /* SKPreloadingView.swift */,
+				39C478A922D143F000748FF0 /* SKActivityIndicator.swift */,
+				39C478A322D143F000748FF0 /* SKRefreshControl.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		39C478B522D1442C00748FF0 /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				39C478B622D1442C00748FF0 /* Repository */,
+				39C478BF22D1442C00748FF0 /* Model */,
+			);
+			path = "Model Layer";
+			sourceTree = "<group>";
+		};
+		39C478B622D1442C00748FF0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				39C478B722D1442C00748FF0 /* Remote Repo */,
+				39C478BA22D1442C00748FF0 /* Data source */,
+				39C478BD22D1442C00748FF0 /* Local Repo */,
+				39C478CC22D144FC00748FF0 /* RemoteContext */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		39C478B722D1442C00748FF0 /* Remote Repo */ = {
+			isa = PBXGroup;
+			children = (
+				39C478B822D1442C00748FF0 /* ApiEndPoints.swift */,
+				39C478B922D1442C00748FF0 /* RemoteDataSource.swift */,
+			);
+			path = "Remote Repo";
+			sourceTree = "<group>";
+		};
+		39C478BA22D1442C00748FF0 /* Data source */ = {
+			isa = PBXGroup;
+			children = (
+				39C478BB22D1442C00748FF0 /* DataSourceProtocol.swift */,
+				39C478BC22D1442C00748FF0 /* DataSource.swift */,
+			);
+			path = "Data source";
+			sourceTree = "<group>";
+		};
+		39C478BD22D1442C00748FF0 /* Local Repo */ = {
+			isa = PBXGroup;
+			children = (
+				39C478BE22D1442C00748FF0 /* LocalDataSource.swift */,
+			);
+			path = "Local Repo";
+			sourceTree = "<group>";
+		};
+		39C478BF22D1442C00748FF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				39C478D522D22A3200748FF0 /* PlacesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		39C478C722D1443900748FF0 /* View-ViewModel layer */ = {
+			isa = PBXGroup;
+			children = (
+				391B8FBD22D4FFD900BD48C8 /* Main */,
+			);
+			path = "View-ViewModel layer";
+			sourceTree = "<group>";
+		};
+		39C478C922D1447D00748FF0 /* Xib's */ = {
+			isa = PBXGroup;
+			children = (
+				39C478CF22D1DB9300748FF0 /* CustomWindowsView.swift */,
+				39C478D322D228A600748FF0 /* CustomWindowsView.xib */,
+				39CCE3E822D28F16008DC36D /* RestaurantsListCell.swift */,
+				39CCE3E922D28F16008DC36D /* RestaurantsListCell.xib */,
+			);
+			path = "Xib's";
+			sourceTree = "<group>";
+		};
+		39C478CC22D144FC00748FF0 /* RemoteContext */ = {
+			isa = PBXGroup;
+			children = (
+				39C478A822D143F000748FF0 /* RemoteContext.swift */,
+			);
+			path = RemoteContext;
+			sourceTree = "<group>";
+		};
+		39CCE3EC22D2A5E6008DC36D /* ImageView+Ext */ = {
+			isa = PBXGroup;
+			children = (
+				39CCE3ED22D2A621008DC36D /* ImageView+Ext.swift */,
+			);
+			path = "ImageView+Ext";
+			sourceTree = "<group>";
+		};
+		3C7E199C2CA912D83615BE81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54037335384AD6CD3A154A81 /* Pods_OpenSooqTask.framework */,
+				41890AF23DEDDD37229CC93E /* Pods_OpenSooqTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EB4412B410280BDE2FFCEE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92CD3194EDB5D39888A64352 /* Pods-OpenSooqTask.debug.xcconfig */,
+				E4A8F894C732F82B6B786A20 /* Pods-OpenSooqTask.release.xcconfig */,
+				934D25444B81BF773385A77D /* Pods-OpenSooqTaskTests.debug.xcconfig */,
+				45B36C729F5AF56CF36F4A83 /* Pods-OpenSooqTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39C4787B22D1424000748FF0 /* OpenSooqTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C4789922D1424100748FF0 /* Build configuration list for PBXNativeTarget "OpenSooqTask" */;
+			buildPhases = (
+				8AD3BB17FFC95E942FBA4069 /* [CP] Check Pods Manifest.lock */,
+				39C4787822D1424000748FF0 /* Sources */,
+				39C4787922D1424000748FF0 /* Frameworks */,
+				39C4787A22D1424000748FF0 /* Resources */,
+				FC58B59BC7955A50D6D525B5 /* [CP] Embed Pods Frameworks */,
+				C62F6EBE6ACEE7D82DBC03F6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenSooqTask;
+			productName = OpenSooqTask;
+			productReference = 39C4787C22D1424100748FF0 /* OpenSooqTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		39C4788F22D1424100748FF0 /* OpenSooqTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39C4789C22D1424100748FF0 /* Build configuration list for PBXNativeTarget "OpenSooqTaskTests" */;
+			buildPhases = (
+				D229BF8051CF0B36AA917A2B /* [CP] Check Pods Manifest.lock */,
+				39C4788C22D1424100748FF0 /* Sources */,
+				39C4788D22D1424100748FF0 /* Frameworks */,
+				39C4788E22D1424100748FF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39C4789222D1424100748FF0 /* PBXTargetDependency */,
+			);
+			name = OpenSooqTaskTests;
+			productName = OpenSooqTaskTests;
+			productReference = 39C4789022D1424100748FF0 /* OpenSooqTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39C4787422D1424000748FF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Qais Alnammari";
+				TargetAttributes = {
+					39C4787B22D1424000748FF0 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					39C4788F22D1424100748FF0 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 39C4787B22D1424000748FF0;
+					};
+				};
+			};
+			buildConfigurationList = 39C4787722D1424000748FF0 /* Build configuration list for PBXProject "OpenSooqTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				ar,
+			);
+			mainGroup = 39C4787322D1424000748FF0;
+			productRefGroup = 39C4787D22D1424100748FF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39C4787B22D1424000748FF0 /* OpenSooqTask */,
+				39C4788F22D1424100748FF0 /* OpenSooqTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39C4787A22D1424000748FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				391B8FB722D3E50200BD48C8 /* Localizable.strings in Resources */,
+				39C4788A22D1424100748FF0 /* LaunchScreen.storyboard in Resources */,
+				39C4788722D1424100748FF0 /* Assets.xcassets in Resources */,
+				39CCE3EB22D28F16008DC36D /* RestaurantsListCell.xib in Resources */,
+				39C4788522D1424100748FF0 /* Main.storyboard in Resources */,
+				39C478D422D228A600748FF0 /* CustomWindowsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C4788E22D1424100748FF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AD3BB17FFC95E942FBA4069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenSooqTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C62F6EBE6ACEE7D82DBC03F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenSooqTask/Pods-OpenSooqTask-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenSooqTask/Pods-OpenSooqTask-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D229BF8051CF0B36AA917A2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenSooqTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC58B59BC7955A50D6D525B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenSooqTask/Pods-OpenSooqTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityLogger/AlamofireNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenSooqTask/Pods-OpenSooqTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39C4787822D1424000748FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C478C522D1442C00748FF0 /* LocalDataSource.swift in Sources */,
+				39C478C422D1442C00748FF0 /* DataSource.swift in Sources */,
+				39C4788222D1424100748FF0 /* MapVC.swift in Sources */,
+				39C478C122D1442C00748FF0 /* ApiEndPoints.swift in Sources */,
+				39C478AC22D143F000748FF0 /* SKActivityIndicatorGenerator.swift in Sources */,
+				39C478CB22D1448A00748FF0 /* AppLanguageManager.swift in Sources */,
+				3974107322D3D1C700AFBF60 /* Globals.swift in Sources */,
+				39C478C322D1442C00748FF0 /* DataSourceProtocol.swift in Sources */,
+				39CCE3E522D28A47008DC36D /* RestaurantsListVC.swift in Sources */,
+				39CCE3EE22D2A621008DC36D /* ImageView+Ext.swift in Sources */,
+				39C478D622D22A3200748FF0 /* PlacesModel.swift in Sources */,
+				39C478B222D143F000748FF0 /* SKActivityIndicator.swift in Sources */,
+				391B8FC222D519A000BD48C8 /* UIView+Ext.swift in Sources */,
+				39C478C222D1442C00748FF0 /* RemoteDataSource.swift in Sources */,
+				3974107022D3D13A00AFBF60 /* LocalizationKeys.swift in Sources */,
+				39C478B322D143F000748FF0 /* NibLoadable.swift in Sources */,
+				39C478AE22D143F000748FF0 /* SKRefreshControl.swift in Sources */,
+				39C4788022D1424100748FF0 /* AppDelegate.swift in Sources */,
+				39CCE3EA22D28F16008DC36D /* RestaurantsListCell.swift in Sources */,
+				39C478D822D22EEB00748FF0 /* Constants.swift in Sources */,
+				39CCE3E722D28B9E008DC36D /* Routing.swift in Sources */,
+				39C478DA22D2315B00748FF0 /* MainViewModel.swift in Sources */,
+				39C478D022D1DB9300748FF0 /* CustomWindowsView.swift in Sources */,
+				39C478AD22D143F000748FF0 /* SKPreloadingView.swift in Sources */,
+				39C478B122D143F000748FF0 /* RemoteContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39C4788C22D1424100748FF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39C4789522D1424100748FF0 /* OpenSooqTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39C4789222D1424100748FF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39C4787B22D1424000748FF0 /* OpenSooqTask */;
+			targetProxy = 39C4789122D1424100748FF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		391B8FB922D3E50200BD48C8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				391B8FB822D3E50200BD48C8 /* en */,
+				391B8FBA22D3E50500BD48C8 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		39C4788322D1424100748FF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C4788422D1424100748FF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39C4788822D1424100748FF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39C4788922D1424100748FF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39C4789722D1424100748FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39C4789822D1424100748FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39C4789A22D1424100748FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CD3194EDB5D39888A64352 /* Pods-OpenSooqTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69M96YCR7L;
+				INFOPLIST_FILE = OpenSooqTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qais.OpenSooqTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39C4789B22D1424100748FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A8F894C732F82B6B786A20 /* Pods-OpenSooqTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69M96YCR7L;
+				INFOPLIST_FILE = OpenSooqTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qais.OpenSooqTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		39C4789D22D1424100748FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 934D25444B81BF773385A77D /* Pods-OpenSooqTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69M96YCR7L;
+				INFOPLIST_FILE = OpenSooqTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qais.OpenSooqTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSooqTask.app/OpenSooqTask";
+			};
+			name = Debug;
+		};
+		39C4789E22D1424100748FF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B36C729F5AF56CF36F4A83 /* Pods-OpenSooqTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69M96YCR7L;
+				INFOPLIST_FILE = OpenSooqTaskTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = qais.OpenSooqTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenSooqTask.app/OpenSooqTask";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39C4787722D1424000748FF0 /* Build configuration list for PBXProject "OpenSooqTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C4789722D1424100748FF0 /* Debug */,
+				39C4789822D1424100748FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C4789922D1424100748FF0 /* Build configuration list for PBXNativeTarget "OpenSooqTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C4789A22D1424100748FF0 /* Debug */,
+				39C4789B22D1424100748FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39C4789C22D1424100748FF0 /* Build configuration list for PBXNativeTarget "OpenSooqTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39C4789D22D1424100748FF0 /* Debug */,
+				39C4789E22D1424100748FF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 39C4787422D1424000748FF0 /* Project object */;
+}

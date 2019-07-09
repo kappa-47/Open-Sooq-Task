@@ -1,0 +1,9 @@
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "35t-Fw-egi"; */
+"35t-Fw-egi.title" = "Map";
+
+/* Class = "UITabBarItem"; title = "List"; ObjectID = "BRW-rn-eRv"; */
+"BRW-rn-eRv.title" = "List";
+
+/* Class = "UILabel"; text = "Near By Restaurants"; ObjectID = "S48-HJ-BUC"; */
+"S48-HJ-BUC.text" = "Near By Restaurants";

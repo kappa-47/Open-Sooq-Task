@@ -1,0 +1,37 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireNetworkActivityLogger (2.4.0):
+    - Alamofire (~> 4.8)
+  - GoogleMaps (3.1.0):
+    - GoogleMaps/Maps (= 3.1.0)
+  - GoogleMaps/Base (3.1.0)
+  - GoogleMaps/Maps (3.1.0):
+    - GoogleMaps/Base
+  - Kingfisher (5.3.1)
+  - Toast-Swift (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireNetworkActivityLogger
+  - GoogleMaps
+  - Kingfisher
+  - Toast-Swift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityLogger
+    - GoogleMaps
+    - Kingfisher
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireNetworkActivityLogger: 6d3398c692d2c5d83b0c58793537860aca1e383d
+  GoogleMaps: 5c13302e6fe6bb6e686b267196586b91cd594225
+  Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  Toast-Swift: 36f4720243c8582c2be243a60a51e193c761f541
+
+PODFILE CHECKSUM: 5c5182c49bb69bfed78ced91eac1ac12493147a9
+
+COCOAPODS: 1.6.1

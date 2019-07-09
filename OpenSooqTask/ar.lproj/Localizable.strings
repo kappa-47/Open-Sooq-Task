@@ -1,0 +1,26 @@
+/* 
+  Localized.strings
+  OpenSooqTask
+
+  Created by Qais Alnammari on 7/8/19.
+  Copyright © 2019 Qais Alnammari. All rights reserved.
+*/
+
+"map" = "الخريطه";
+"list" = "القائمة";
+"distance" = "المسافه";
+"name" = "الاسم";
+"type" = "النوع";
+
+"locationUnknown" = "الموقع غير معروف";
+"pleaseTryAgainLater" = "الرجاء معاودة المحاولة في وقت لاحق!";
+"locationAccessDenied" = "تم رفض الوصول إلى الموقع";
+"requiredAccessMsg" = "يتطلب هذا التطبيق الوصول إلى موقعك من أجل تقديم الخدمة!";
+"openSettings" = "فتح الإعدادات";
+"cancel" = "إلغاء";
+"connectionError" = "خطأ في الإتصال";
+"connectionErrorMsg" = "لا يمكن الوصول إلى موقعك الحالي! يرجى التحقق من اتصال الشبكة أو أنك لست في وضع الطيران";
+"metersAway" = "متر بعيدا";
+"restaurantName" = "اسم المطعم";
+"unknown" = "غير معروف";
+"nearByRestaurants" = "المطاعم القريبة";
